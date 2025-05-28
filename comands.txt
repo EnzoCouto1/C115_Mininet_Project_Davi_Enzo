@@ -1,0 +1,55 @@
+Questão 1:
+
+Letra A)
+
+sudo mn --topo=tree,depth=4,fanout=3 --mac --link tc,bw=35
+
+Letra B) 
+nodes      
+net         
+dump        
+
+Letra C)
+camada 0 -> 1 servidor
+camada 1 -> 3 servidor
+camada 2 -> 9 servidor
+camada 3 -> 27 servidor
+camada 4 -> 81 host
+
+Letra D) 
+Teste de ping utilizando bw=35
+
+Letra E) 
+Fazendo teste de pind utilizando outras bw
+
+Questão 2:
+
+Letra A)
+Codigo utilizado custom_topo.py
+sudo mn --custom topo-custom.py --topo mytopo --mac --switch ovsk --controller ovsc
+
+
+Letra B)
+Teste realizado com sucesso com TCPDump
+
+
+Letra C)
+         h5
+          |
+         s2
+        / | \
+      s1  |  s3
+      |   |  /|\
+     h1  s5 h6 h7 h8
+         / \
+       h3  h4
+
+Letra D)
+Teste de ping realizado com sucesso
+
+Letra E)
+Deletando as regras antigas e dando um 'pingall', mostre o que acontece após deletá-las
+
+Letra F)
+Adicionando as novas regras e testando com pings específicos 
+
